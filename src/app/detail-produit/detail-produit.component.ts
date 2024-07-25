@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Produit } from '../produit/produit.model';
+
 
 @Component({
   selector: 'app-detail-produit',
-  standalone: true,
-  imports: [],
   templateUrl: './detail-produit.component.html',
-  styleUrl: './detail-produit.component.css'
+  styleUrls: ['./detail-produit.component.css'],
+  standalone: true,
+  imports: [CommonModule] // Assure-toi que CommonModule est bien importé
 })
 export class DetailProduitComponent {
-
+  @Input() produit?: Produit | null = null;
 }

@@ -1,1 +1,18 @@
-<p>produit works!</p>
+
+  <div class="container mt-4">
+    <h2 class="mb-4">Liste des Produits</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3" *ngFor="let produit of produits">
+            <div class="card" style="width: 18rem;">
+                <img [src]="produit.imageUrl" class="card-img-top" alt="{{ produit.nom }}" style="height: 180px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ produit.nom | uppercase }}</h5>
+                    <p class="card-text">Prix: {{ produit.prix | currency: 'EUR': 'symbol': '1.2-2' }}</p>
+                    <button class="btn btn-primary" (click)="selectProduit(produit)">Voir Détails</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

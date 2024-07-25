@@ -1,1 +1,7 @@
-<p>detail-produit works!</p>
+<div *ngIf="produit">
+  <h2>Détails du Produit</h2>
+  <p>Nom: {{ produit.nom }}</p>
+  <p>Prix: {{ produit.prix | currency: 'EUR': 'symbol' : '2.2-2' }}</p>
+</div>
+
+  
