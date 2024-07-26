@@ -1,7 +1,10 @@
-<div *ngIf="produit">
-  <h2>Détails du Produit</h2>
-  <p>Nom: {{ produit.nom }}</p>
-  <p>Prix: {{ produit.prix | currency: 'EUR': 'symbol' : '2.2-2' }}</p>
-</div>
-
+<div *ngIf="produit" class="card">
+  <div class="card-header">
+    <h2>Détails du Produit</h2>
+  </div>
+  <div class="card-body">
+    <p><strong>Nom:</strong> {{ produit.nom }}</p>
+    <p><strong>Prix:</strong> {{ produit.prix | currency: 'EUR': 'symbol' : '2.2-2' }}</p>
+  </div>
   
+</div>

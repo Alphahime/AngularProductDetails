@@ -1,0 +1,71 @@
+/* Style global pour le conteneur */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  /* Style pour la carte de détail */
+  .card.detail-card {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Styles pour l'en-tête de la carte */
+  .card-header {
+    background: #3f51b5;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* Styles pour le corps de la carte */
+  .card-body {
+    padding: 16px;
+  }
+  
+  /* Styles pour la liste des produits */
+  .produits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Style pour chaque carte de produit */
+  .produit-card {
+    max-width: 200px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .produit-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .produit-card button {
+    background: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  .card{
+    position: absolute;
+    margin-top: -70rem;
+    margin-left: 60rem;
+  }
